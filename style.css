@@ -39,6 +39,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## All Archives Page
 	## Submit a Quote Page
 --------------------------------------------------------------*/
+@import url(../fonts/styless.css);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -229,8 +230,8 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #ffffff;
+  font-family: "Exo web";
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -276,6 +277,9 @@ mark, ins {
 big {
   font-size: 125%; }
 
+a {
+  color: #00cc00; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -292,7 +296,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #222;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote,
@@ -411,11 +415,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #00cc00; }
   a:visited {
-    color: purple; }
+    color: #00cc00; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #00cc00; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -428,7 +432,6 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -595,8 +598,11 @@ object {
 /* Submit a Quote Page */
 body {
   background: black; }
-  body #page {
-    margin: 0 auto;
-    max-width: 1080px;
-    padding: 2.5%;
-    width: 100%; }
+
+#page {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 2.5%;
+  width: 100%; }
+  #page .content-area .quote-author {
+    display: inline; }

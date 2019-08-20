@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
 
             {
                 $('.entry-info').append(
-                    `<p class="quote-author">&#8211; ${response[0]._qod_quote_source}</p>`
+                    `<span class="quote-author">&#44; ${response[0]._qod_quote_source}</span>`
                 );
             //    console.log(response[0]._qod_quote_source);
 
@@ -32,12 +32,6 @@ jQuery(document).ready(function ($) {
             }
             
             // console.log(response);
-
-
-
-        
-            
-            
 
 
             history.pushState(null, null);
