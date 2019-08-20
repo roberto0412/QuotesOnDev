@@ -352,34 +352,14 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+  border: 2px solid #0c0;
   border-radius: 3px;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: .75rem;
+  background: #222;
+  color: #0c0;
+  font-size: 20px;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+  font-weight: 700;
+  padding: 12px 34px; }
 
 /* Fields */
 input[type="text"],
@@ -597,7 +577,7 @@ object {
 /* All Archives Page */
 /* Submit a Quote Page */
 body {
-  background: black; }
+  background: #222; }
 
 #page {
   margin: 0 auto;
@@ -606,3 +586,55 @@ body {
   width: 100%; }
   #page .content-area .quote-author {
     display: inline; }
+  #page .site-info {
+    padding-top: 20px; }
+    #page .site-info li {
+      border-right: 2px solid white;
+      padding: 0 1rem; }
+
+.page-template-default.page-id-208 .site-content .link_list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0; }
+  .page-template-default.page-id-208 .site-content .link_list li {
+    margin-bottom: .5rem;
+    margin-right: 1.125rem; }
+    .page-template-default.page-id-208 .site-content .link_list li a {
+      text-decoration: none; }
+
+.page-template-default.page-id-208 .site-content .category_list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0; }
+  .page-template-default.page-id-208 .site-content .category_list li {
+    margin-bottom: .5rem;
+    margin-right: 1.125rem; }
+    .page-template-default.page-id-208 .site-content .category_list li a {
+      text-decoration: none; }
+
+.page-template-default.page-id-208 .site-content .tag_lists {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0; }
+  .page-template-default.page-id-208 .site-content .tag_lists li {
+    margin-bottom: .5rem;
+    margin-right: 1.125rem; }
+    .page-template-default.page-id-208 .site-content .tag_lists li a {
+      text-decoration: none; }
+
+@media only screen and (min-width: 600px) {
+  .site-header .logo_tent {
+    width: 79px;
+    width: 500px; } }

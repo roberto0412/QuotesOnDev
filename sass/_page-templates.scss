@@ -7,7 +7,7 @@
 /* Submit a Quote Page */
 
 body{
-    background: black;
+    background:#222;
 
 }
     #page{
@@ -21,15 +21,110 @@ body{
      .content-area{
          .quote-author{
              display: inline;
-
-
          }
-
-
      }
+
+     .site-info{
+
+     padding-top: 20px;
+
+
+        li{
+            border-right: 2px solid white;  
+            padding: 0 1rem;
+            
+
+        }
+     }
+
+
+
      
     }
     
 
 
 
+
+
+    //about page
+
+
+    .page-template-default.page-id-208{
+
+        .site-content{
+            .link_list{
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 0;
+                
+
+                li{
+                    margin-bottom: .5rem;
+                    margin-right: 1.125rem;
+                    a{
+                        text-decoration: none;
+                    }
+
+
+                }
+            }
+
+
+            .category_list{
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 0;
+
+                li{
+                    margin-bottom: .5rem;
+                    margin-right: 1.125rem;
+                    a{
+                        text-decoration: none;
+                    }
+
+
+                }
+
+            }
+
+            .tag_lists{
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+
+                padding-left: 0;
+
+
+                li{
+                    margin-bottom: .5rem;
+                    margin-right: 1.125rem;
+                    a{
+                        text-decoration: none;
+                    }
+
+
+                }
+
+            }
+            
+        }
+
+
+    }
+
+
+
+    //header Styles
+
+
+    .site-header{
+        .logo_tent{
+           @include tablet {
+               width: 79px;
+               width: 500px;
+           }
+        }
+    }

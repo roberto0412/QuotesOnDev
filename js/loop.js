@@ -32,9 +32,9 @@ jQuery(document).ready(function ($) {
             }
             
             // console.log(response);
-
-
-            history.pushState(null, null);
+console.log(window.red_vars);
+         const url = window.red_vars.home_url + '/' + response[0].slug;
+            history.pushState(null, null, url);
             // console.log(response[0].content.rendered)
             // alert("Success! Comments are closed for this post.");
         });
