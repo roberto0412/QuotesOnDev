@@ -23,15 +23,26 @@ jQuery(document).ready(function ($) {
 
 
             {
+                if (response[0]._qod_quote_source_url !== "")
+                {
+                    $('.entry-info').append(
+                        `<a  href="${response[0]._qod_quote_source_url}"class="quote-author">&#44; ${response[0]._qod_quote_source}</a>`
+                    );
+
+                }
+                else{
+
+                
                 $('.entry-info').append(
                     `<span class="quote-author">&#44; ${response[0]._qod_quote_source}</span>`
                 );
+                }
             //    console.log(response[0]._qod_quote_source);
 
 
             }
             
-            // console.log(response);
+            console.log(response);
 console.log(window.red_vars);
          const url = window.red_vars.home_url + '/' + response[0].slug;
             history.pushState(null, null, url);

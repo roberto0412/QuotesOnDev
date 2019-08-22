@@ -4,10 +4,39 @@
 
 /* All Archives Page */
 
-/* Submit a Quote Page */
-
 body{
     background:#222;
+
+    .content-area{
+        position: relative;
+        @include desktop{
+            &:before {
+                content: "\f10d";
+                color: green;
+                font-size: 140px;
+                font-weight: 900;
+                font-family: 'Font Awesome 5 Free';
+                position: absolute;
+                left: -150px;
+                top: -100px;
+            
+            
+            }
+            &:after{
+                content: "\f10d";
+                color: green;
+                font-size: 140px;
+                top: -105px;
+                font-weight: 900;
+                right: -150px;
+                position: absolute;
+                font-family: 'Font Awesome 5 Free';
+                
+                
+                    
+            }
+        }
+    }
 
 }
     #page{
@@ -59,6 +88,9 @@ body{
                 flex-wrap: wrap;
                 padding-left: 0;
                 margin-left: 0;
+                @include tablet{
+                    font-size: 20px;
+                }
                 
 
                 li{
@@ -79,6 +111,9 @@ body{
                 flex-wrap: wrap;
                 padding-left: 0;
                 margin-left: 0;
+                @include tablet {
+                    font-size: 20px;
+                }
 
                 li{
                     margin-bottom: .5rem;
@@ -98,6 +133,9 @@ body{
                 flex-wrap: wrap;
                 padding-left: 0;
                 margin-left: 0;
+                @include tablet{
+                    font-size: 20px;
+                }
 
 
 
@@ -129,5 +167,53 @@ body{
                width: 79px;
                width: 500px;
            }
+           @include desktop{
+               width: 700px;
+               height: 110px;
+           }
         }
     }
+
+
+
+
+
+    //home//
+
+
+    .home{
+
+        .entry-content{
+            @include tablet{
+                font-size: 28px;
+            }
+
+        }
+        .entry-info{
+            h2{
+                @include tablet{
+                    font-size: 20px
+                }
+            }
+            a{
+            @include tablet {
+                font-size: 20px;
+            }
+           }
+        }
+    }
+
+
+
+
+
+
+
+
+    //submit a quote page//
+
+
+
+
+
+

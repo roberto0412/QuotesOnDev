@@ -575,9 +575,29 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* All Archives Page */
-/* Submit a Quote Page */
 body {
   background: #222; }
+  body .content-area {
+    position: relative; }
+    @media only screen and (min-width: 1000px) {
+      body .content-area:before {
+        content: "\f10d";
+        color: green;
+        font-size: 140px;
+        font-weight: 900;
+        font-family: 'Font Awesome 5 Free';
+        position: absolute;
+        left: -150px;
+        top: -100px; }
+      body .content-area:after {
+        content: "\f10d";
+        color: green;
+        font-size: 140px;
+        top: -105px;
+        font-weight: 900;
+        right: -150px;
+        position: absolute;
+        font-family: 'Font Awesome 5 Free'; } }
 
 #page {
   margin: 0 auto;
@@ -599,7 +619,11 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 0; }
+  padding-left: 0;
+  margin-left: 0; }
+  @media only screen and (min-width: 600px) {
+    .page-template-default.page-id-208 .site-content .link_list {
+      font-size: 20px; } }
   .page-template-default.page-id-208 .site-content .link_list li {
     margin-bottom: .5rem;
     margin-right: 1.125rem; }
@@ -613,7 +637,11 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 0; }
+  padding-left: 0;
+  margin-left: 0; }
+  @media only screen and (min-width: 600px) {
+    .page-template-default.page-id-208 .site-content .category_list {
+      font-size: 20px; } }
   .page-template-default.page-id-208 .site-content .category_list li {
     margin-bottom: .5rem;
     margin-right: 1.125rem; }
@@ -627,7 +655,11 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 0; }
+  padding-left: 0;
+  margin-left: 0; }
+  @media only screen and (min-width: 600px) {
+    .page-template-default.page-id-208 .site-content .tag_lists {
+      font-size: 20px; } }
   .page-template-default.page-id-208 .site-content .tag_lists li {
     margin-bottom: .5rem;
     margin-right: 1.125rem; }
@@ -638,3 +670,20 @@ body {
   .site-header .logo_tent {
     width: 79px;
     width: 500px; } }
+
+@media only screen and (min-width: 1000px) {
+  .site-header .logo_tent {
+    width: 700px;
+    height: 110px; } }
+
+@media only screen and (min-width: 600px) {
+  .home .entry-content {
+    font-size: 28px; } }
+
+@media only screen and (min-width: 600px) {
+  .home .entry-info h2 {
+    font-size: 20px; } }
+
+@media only screen and (min-width: 600px) {
+  .home .entry-info a {
+    font-size: 20px; } }

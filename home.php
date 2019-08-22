@@ -14,7 +14,8 @@ get_header(); ?>
 		
 		
 		$args = array(
-        'posts_per_page'    =>  1
+			'orderby'        => 'rand',
+			'posts_per_page' => '1',
     );
 
     $my_post = new WP_Query( $args );
@@ -27,7 +28,7 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content' ); ?>
 
 			<?php endwhile; ?>
-		<button type="button" id="nextquote">Show Me Another!</button>
+		<div><button type="button" id="nextquote">Show Me Another!</button></div>
 
 		<?php else : ?>
 
