@@ -28,7 +28,7 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content' ); ?>
 
 			<?php endwhile; ?>
-		<div><button type="button" id="nextquote">Show Me Another!</button></div>
+		<div class ="butt_on"><button type="button" id="nextquote">Show Me Another!</button></div>
 
 		<?php else : ?>
 

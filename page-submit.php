@@ -14,18 +14,25 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				<div class="container">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+				<h1>Submit a Quote</h1>
+				<form id="form_submit" >
+    <label for="author">Author Of A Quote</label>
+    <input type="text" id="q_author" name="author">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="content">Quote</label>
+    <input type="text" id="quote" name="content">
 
    
    
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <label for="source"> Where did you find this quote? (e.g book name)
+				<input type="text" name="source" id="source_quote"> </label>
+
+	
+	<label for="url">
+				Provide the URL of the quote source, if available
+				<input type="url" name="url" id="url_quote">
+			</label>
 
     <input type="submit" value="Submit">
   </form>

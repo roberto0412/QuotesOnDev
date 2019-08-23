@@ -36,6 +36,7 @@ body{
                     
             }
         }
+        
     }
 
 }
@@ -187,6 +188,9 @@ body{
             @include tablet{
                 font-size: 28px;
             }
+            @include desktop {
+                font-size: 40px;
+            }
 
         }
         .entry-info{
@@ -200,6 +204,13 @@ body{
                 font-size: 20px;
             }
            }
+        }
+        .butt_on{
+            @include desktop{
+                display: flex;
+                justify-content: center;
+              
+            }
         }
     }
 
@@ -215,5 +226,64 @@ body{
 
 
 
+#form_submit{
+    display: flex;
+    flex-direction: column;
+  
+    #q_author{
+        width: 700px;
+        height: 60px;
+        margin-bottom: 20px;
+        background-color: transparent;
 
+      border: 2px solid #0c0;
+	  border-radius: 3px;
+	  color:#0c0;
+	  font-weight: 700;
+      padding: 12px 34px ;
+      
+
+        
+    }
+    #quote{
+        width: 800px;
+        height: 100px;
+        background-color: transparent;
+        border: 2px solid #0c0;
+        border-radius: 3px;
+        color:#0c0;
+        font-weight: 700;
+        padding: 12px 34px ;
+        margin-bottom: 20px;
+  
+    }
+    #source_quote{
+        height: 70px;
+        width: 700px;
+        background-color: transparent;
+
+        border: 2px solid #0c0;
+        border-radius: 3px;
+        color:#0c0;
+        font-weight: 700;
+        padding: 12px 34px ;
+        margin-bottom: 20px;
+  
+    }
+    
+    #url_quote{
+        height: 70px;
+        width: 700px;
+        background-color: transparent;
+
+        border: 2px solid #0c0;
+        border-radius: 3px;
+        color:#0c0;
+        font-weight: 700;
+        padding: 12px 34px ;
+        margin-bottom: 20px;
+        
+    }
+    
+}
 
