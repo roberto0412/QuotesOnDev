@@ -355,11 +355,13 @@ input[type="submit"] {
   border: 2px solid #0c0;
   border-radius: 3px;
   background: #222;
+  max-width: 400px;
   color: #0c0;
   font-size: 20px;
   line-height: 1;
   font-weight: 700;
-  padding: 12px 34px; }
+  padding: 12px 34px;
+  max-width: 400px; }
 
 /* Fields */
 input[type="text"],
@@ -698,7 +700,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center; } }
 
-#form_submit {
+#quote-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -706,7 +708,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  #form_submit #q_author {
+  #quote-form #q-author {
     width: 700px;
     height: 60px;
     margin-bottom: 20px;
@@ -716,7 +718,7 @@ body {
     color: #0c0;
     font-weight: 700;
     padding: 12px 34px; }
-  #form_submit #quote {
+  #quote-form #quote {
     width: 800px;
     height: 100px;
     background-color: transparent;
@@ -726,7 +728,7 @@ body {
     font-weight: 700;
     padding: 12px 34px;
     margin-bottom: 20px; }
-  #form_submit #source_quote {
+  #quote-form #source-quote {
     height: 70px;
     width: 700px;
     background-color: transparent;
@@ -736,7 +738,7 @@ body {
     font-weight: 700;
     padding: 12px 34px;
     margin-bottom: 20px; }
-  #form_submit #url_quote {
+  #quote-form #url-quote {
     height: 70px;
     width: 700px;
     background-color: transparent;

@@ -13,9 +13,9 @@ get_header(); ?>
 			
 				<h1>Submit a Quote</h1>
 				<?php if (is_user_logged_in()) : ?>
-				<form id="form_submit" >
+				<form id="quote-form"  method='POST'>
     <label for="author">Author Of A Quote</label>
-    <input type="text" id="q_author" name="author">
+    <input type="text" id="q-author" name="author">
 
     <label for="content">Quote</label>
     <input type="text" id="quote" name="content">
@@ -24,15 +24,15 @@ get_header(); ?>
    
 
     <label for="source"> Where did you find this quote? (e.g book name)
-				<input type="text" name="source" id="source_quote"> </label>
+				<input type="text" name="source" id="source-quote"> </label>
 
 	
 	<label for="url">
 				Provide the URL of the quote source, if available
-				<input type="url" name="url" id="url_quote">
+				<input type="url" name="url" id="url-quote">
 			</label>
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit"id= "submit-button">
   </form>
 </div>
 

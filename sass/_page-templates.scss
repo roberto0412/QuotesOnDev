@@ -226,11 +226,11 @@ body{
 
 
 
-#form_submit{
+#quote-form{
     display: flex;
     flex-direction: column;
   
-    #q_author{
+    #q-author{
         width: 700px;
         height: 60px;
         margin-bottom: 20px;
@@ -257,7 +257,7 @@ body{
         margin-bottom: 20px;
   
     }
-    #source_quote{
+    #source-quote{
         height: 70px;
         width: 700px;
         background-color: transparent;
@@ -271,7 +271,7 @@ body{
   
     }
     
-    #url_quote{
+    #url-quote{
         height: 70px;
         width: 700px;
         background-color: transparent;

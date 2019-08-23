@@ -50,4 +50,42 @@ console.log(window.red_vars);
             // alert("Success! Comments are closed for this post.");
         });
     });
+
+    $('#submit-button').on("click", function(event) {
+        event.preventDefault();
+       
+
+        const $author = $('#q-author').val();
+        const $quote = $('#quote').val();
+        const $Quote_source = $('#source-quote').val();
+        const $url_Source = $('#url-quote').val();
+        
+        $.ajax({
+          method: "post",
+          url: window.red_vars.rest_url + "wp/v2/posts",
+          beforeSend: function (xhr) {
+            xhr.setRequestHeader("X-WP-Nonce", window.red_vars.wpapi_nonce);
+          },
+        
+            data: {
+            title: $author,
+            content: $quote,
+            _qod_quote_source: $Quote_source,
+            _qod_quote_source_url: $url_Source,
+            post_status: "pending"
+          }
+        }).success(function() {
+          alert("Quote was sucessfully submitted to database");
+          $('#quote-form')[0].reset();
+          
+    
+        }).fail(function () {
+          alert("Quote submission was unsuccessful");
+          $('#quote-form')[0].reset();
+    
+  
+        });
+      });
 });
+
+
