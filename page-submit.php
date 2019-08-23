@@ -10,11 +10,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-				<div class="container">
+			
 				<h1>Submit a Quote</h1>
+				<?php if (is_user_logged_in()) : ?>
 				<form id="form_submit" >
     <label for="author">Author Of A Quote</label>
     <input type="text" id="q_author" name="author">
@@ -38,7 +36,12 @@ get_header(); ?>
   </form>
 </div>
 
-			<?php endwhile; // End of the loop. ?>
+<?php else : ?>
+
+<p>Sorry, you must be logged in to submit a quote!</p>
+<a href="<?= esc_url(admin_url()); ?>">Click here to login.</a>
+
+<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

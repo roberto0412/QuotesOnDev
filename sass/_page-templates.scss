@@ -287,3 +287,30 @@ body{
     
 }
 
+.site-footer{
+    
+        
+        .site-info{
+            @include desktop{
+                display: flex;
+            }
+        
+
+
+
+
+    @include desktop{
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+}
+ p {
+     margin: 0;
+ }
+
+
+
+
+}
