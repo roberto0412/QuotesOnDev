@@ -115,3 +115,11 @@ require get_template_directory() . '/inc/api.php';
 
 
 
+// Alter search posts per page
+function myprefix_search_posts_per_page($query) {
+    if ( $query->is_search ) {
+        $query->set( 'posts_per_page', '10' );
+    }
+    return $query;
+}
+add_filter( 'pre_get_posts','myprefix_search_posts_per_page' );
