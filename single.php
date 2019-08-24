@@ -17,6 +17,8 @@ get_header(); ?>
 			
 
 		<?php endwhile; // End of the loop. ?>
+		<div class ="butt_on"><button type="button" id="nextquote">Show Me Another!</button></div>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
