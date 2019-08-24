@@ -111,10 +111,6 @@ require get_template_directory() . '/inc/api.php';
 
 
 
-
-
-
-
 // Alter search posts per page
 function myprefix_search_posts_per_page($query) {
     if ( $query->is_search ) {

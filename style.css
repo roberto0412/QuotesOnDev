@@ -581,16 +581,16 @@ body {
     @media only screen and (min-width: 1000px) {
       body .content-area:before {
         content: "\f10d";
-        color: green;
+        color: #00cc00;
         font-size: 140px;
         font-weight: 900;
         font-family: 'Font Awesome 5 Free';
         position: absolute;
-        left: -150px;
+        left: -170px;
         top: -100px; }
       body .content-area:after {
-        content: "\f10d";
-        color: green;
+        content: '\f10e';
+        color: #00cc00;
         font-size: 140px;
         top: -105px;
         font-weight: 900;
@@ -665,6 +665,15 @@ body {
     .page-template-default.page-id-208 .site-content .tag_lists li a {
       text-decoration: none; }
 
+@media only screen and (min-width: 1000px) {
+  .site-header a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
 @media only screen and (min-width: 600px) {
   .site-header .logo_tent {
     width: 79px;
@@ -674,6 +683,11 @@ body {
   .site-header .logo_tent {
     width: 700px;
     height: 110px; } }
+
+.home .site-content {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto; }
 
 @media only screen and (min-width: 600px) {
   .home .entry-content {
@@ -764,5 +778,35 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end; } }
 
+.site-footer .site-info ul li {
+  margin-right: 20px; }
+
 .site-footer p {
   margin: 0; }
+
+.page-template-default .site-content {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.page-template-default .site-content {
+  position: relative; }
+  @media only screen and (min-width: 1000px) {
+    .page-template-default .site-content:before {
+      content: "\f10d";
+      color: #00cc00;
+      font-size: 140px;
+      font-weight: 900;
+      font-family: 'Font Awesome 5 Free';
+      position: absolute;
+      left: -170px;
+      top: -100px; }
+    .page-template-default .site-content:after {
+      content: '\f10e';
+      color: #00cc00;
+      font-size: 140px;
+      top: -105px;
+      font-weight: 900;
+      right: -150px;
+      position: absolute;
+      font-family: 'Font Awesome 5 Free'; } }

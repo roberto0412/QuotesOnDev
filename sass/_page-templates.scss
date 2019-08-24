@@ -12,19 +12,19 @@ body{
         @include desktop{
             &:before {
                 content: "\f10d";
-                color: green;
+                color: $color__link;
                 font-size: 140px;
                 font-weight: 900;
                 font-family: 'Font Awesome 5 Free';
                 position: absolute;
-                left: -150px;
+                left: -170px;
                 top: -100px;
             
             
             }
             &:after{
-                content: "\f10d";
-                color: green;
+                content: '\f10e';
+                color: $color__link;
                 font-size: 140px;
                 top: -105px;
                 font-weight: 900;
@@ -163,12 +163,21 @@ body{
 
 
     .site-header{
+        a{
+            @include desktop{
+                display: flex;
+            justify-content: center;
+        }
+
+        }
         .logo_tent{
+
            @include tablet {
                width: 79px;
                width: 500px;
            }
            @include desktop{
+              
                width: 700px;
                height: 110px;
            }
@@ -183,6 +192,12 @@ body{
 
 
     .home{
+
+        .site-content{
+            max-width: 800px;
+            margin-right: auto;
+            margin-left: auto;
+        }
 
         .entry-content{
             @include tablet{
@@ -292,6 +307,7 @@ body{
         
         .site-info{
             @include desktop{
+                
                 display: flex;
             }
         
@@ -304,8 +320,15 @@ body{
         justify-content: flex-end;
         
     }
+    ul{
+    li{
+        margin-right: 20px;
+    }
+}
+
 
 }
+
  p {
      margin: 0;
  }
@@ -314,3 +337,51 @@ body{
 
 
 }
+
+
+
+
+
+//quotes for archive page
+
+    .page-template-default{
+        .site-content{
+            max-width: 800px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+
+    .site-content{
+        position: relative;
+        @include desktop{
+            &:before {
+                content: "\f10d";
+                color: $color__link;
+                font-size: 140px;
+                font-weight: 900;
+                font-family: 'Font Awesome 5 Free';
+                position: absolute;
+                left: -170px;
+                top: -100px;
+            
+            
+            }
+            &:after{
+                content: '\f10e';
+                color: $color__link;
+                font-size: 140px;
+                top: -105px;
+                font-weight: 900;
+                right: -150px;
+                position: absolute;
+                font-family: 'Font Awesome 5 Free';
+                
+                
+                    
+            }
+        }
+        
+    }
+
+    }
